@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Todo</title>
+    <!--link to stylesheet-->
+    <link rel="stylesheet" href="style.css">
+    <!--link to responsive styleheet-->
+    <link rel="stylesheet" href="responsiveness.css">
+    <!--FONT LINKS-->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Inter:wght@500&family=Lexend+Deca:wght@500&family=Outfit&family=Red+Hat+Display:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Eczar&family=Inter:wght@500&family=Lexend+Deca:wght@500&family=Outfit&family=Red+Hat+Display:wght@500&display=swap" rel="stylesheet">
+    <!--<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">-->
+
+</head>
+<body class='test'>
+<div class="container">
+    <div class="inner">
+        <h1>TO-DO LIST</h1>
+    <form action="" id="to-do">
+        <input class="no-outline" type="text" name='title'  placeholder="Enter a new task">
+        <input type="submit" value='+' id='submitBtn' > 
+    </form>
+    <ul id="todo">
+     
+
+    </ul>
+
+    <p id="clear">Clear To-do's </p>
+    </div>
+</div>
+
+<div id="modal">
+    <p class="modal-text" id='closeModal'>close</p>
+    <form action="" id="todoInfo">
+        <div class="formBlock">
+                <p class="modal-text">Created on: <span id="createdAt"></span></p>
+            <input class="input" type="text" name='title' placeholder="Title">
+        </div>
+        <div class="formBlock">
+            
+            <textarea class="input" name="description" id="" cols="30" rows="10"></textarea>
+        </div>
+        <div class="formBlock check" >
+            
+            <label class="check" for="completed">Completed</label> <input class="check" type="checkbox" name= 'completed'> 
+        </div>
+        <div class="formBlock date">
+            
+            <label class="submission" for="dueDate">Expected Date of completion</label><input class="completion-input" type="datetime-local" name='dueDate' >
+            <p class="completion">Completed on: <span id="completedAt"></span></p>
+
+        </div>
+        <div class="formBlock"></div>
+       <input class="button-save" type="submit" value="Save" id='save'>
+    </div>
+    </form>
+
+</div>
+
+    <!--<script src="todo.js"></script>-->
+    <script src="to-do.js"></script>
+</body>
+</html>
